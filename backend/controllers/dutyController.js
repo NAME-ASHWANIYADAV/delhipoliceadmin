@@ -1,5 +1,5 @@
 const Duty = require('../models/duty');
-const User = require('../models/user');
+const User = require('../models/User');
 
 const dutyAssign = async (req, res) => {
   const { mobileNumber, checkbox, startTime, endTime, selectedArea } = req.body;
