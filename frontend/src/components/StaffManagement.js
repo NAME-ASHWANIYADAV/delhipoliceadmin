@@ -1,13 +1,19 @@
 import React from 'react';
 import '../styles/dutychart2.css'; // Ensure this CSS file is in the src directory or adjust the path accordingly.
+import { useNavigate } from 'react-router-dom';
 import groupImage from '../assets/Group.png';
 import userIcon from '../assets/user.svg';
 import mapImage from '../assets/MAP.png';
 
 
 
-
 const StaffManagement = () => {
+ 
+    const navigate = useNavigate();
+  
+    const handleRedirect = () => {
+      navigate('/DutyTask');
+    };
   return (
     <div style={{ 
       backgroundImage: `url(${mapImage})`, 
@@ -16,10 +22,10 @@ const StaffManagement = () => {
     }}>
       <div className="nav">
         <img src={groupImage} alt="#" />
-        <h1>DASHBOARD</h1>
-        <h1>DUTY CHART</h1>
-        <h1>ADD/REMOVE STAFF</h1>
-        <h1>STAFF MEMBERS</h1>
+        <button className="nav-button">DASHBOARD</button>
+      <button className="nav-button" onClick={handleRedirect} >DUTY CHART</button>
+      <button className="nav-button" >ADD/REMOVE STAFF</button>
+      <button className="nav-button">STAFF MEMBERS</button>
         <img src={userIcon} alt="#" />
       </div>
       <br /><br /><br />

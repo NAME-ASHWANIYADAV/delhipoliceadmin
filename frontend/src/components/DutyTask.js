@@ -1,4 +1,6 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
+
 import '../styles/dutytask.css';
 import groupImage from '../assets/Group.png';
 import userIcon from '../assets/user.svg';
@@ -8,6 +10,11 @@ import mapImage from '../assets/MAP.png';
 
 
 const DutyTask = () => {
+  const navigate = useNavigate();
+
+  const handleRedirect = () => {
+    navigate('/StaffManagement');
+  };
   return (
     <div  className='background'style={{ 
       backgroundImage: `url(${mapImage})`, 
@@ -20,7 +27,7 @@ const DutyTask = () => {
 
       <button className="nav-button">DASHBOARD</button>
       <button className="nav-button">DUTY CHART</button>
-      <button className="nav-button">ADD/REMOVE STAFF</button>
+      <button className="nav-button" onClick={handleRedirect}>ADD/REMOVE STAFF</button>
       <button className="nav-button">STAFF MEMBERS</button>
         <img src={userIcon} alt="#" className='user'/>
       </div>
