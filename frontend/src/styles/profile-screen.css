@@ -1,0 +1,194 @@
+.map1 {
+    position: absolute;
+    top: calc(50% - 491px);
+    left: calc(50% - 809px);
+    width: 1930px;
+    height: 982px;
+    background-image: url(./public/map@3x.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+  }
+  .user-icon {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    max-width: 100%;
+    overflow: hidden;
+    max-height: 100%;
+  }
+  .vuesaxlinearuser {
+    cursor: pointer;
+    border: 0;
+    padding: 0;
+    background-color: transparent;
+    position: absolute;
+    height: 4.89%;
+    width: 3.17%;
+    top: 3.56%;
+    right: 3.24%;
+    bottom: 91.55%;
+    left: 93.58%;
+  }
+  .group-icon2 {
+    position: absolute;
+    height: 6.16%;
+    width: 6.12%;
+    top: 2.95%;
+    right: 91.44%;
+    bottom: 90.89%;
+    left: 2.45%;
+    max-width: 100%;
+    overflow: hidden;
+    max-height: 100%;
+    object-fit: cover;
+  }
+  .dashboard1,
+  .duty-chart2 {
+    cursor: pointer;
+    border: 0;
+    padding: 0;
+    background-color: transparent;
+    position: absolute;
+    top: 44px;
+    left: 183px;
+    font-size: var(--font-size-7xl);
+    font-weight: 700;
+    font-family: var(--font-montserrat);
+    color: var(--color-black);
+    text-align: left;
+    display: inline-block;
+  }
+  .duty-chart2 {
+    left: 417px;
+  }
+  .profile-screen-child {
+    position: absolute;
+    top: 80px;
+    left: 648px;
+    max-height: 100%;
+    width: 292px;
+    object-fit: cover;
+  }
+  .add-remove-staff2,
+  .staff-members1 {
+    cursor: pointer;
+    border: 0;
+    padding: 0;
+    background-color: transparent;
+    position: absolute;
+    top: 44px;
+    left: 648px;
+    font-size: var(--font-size-7xl);
+    font-weight: 700;
+    font-family: var(--font-montserrat);
+    color: var(--color-black);
+    text-align: left;
+    display: inline-block;
+  }
+  .staff-members1 {
+    left: 993px;
+  }
+  .profile-screen-item {
+    position: absolute;
+    top: calc(50% - 348px);
+    left: 44px;
+    border-radius: var(--br-xl);
+    background-color: var(--color-white);
+    border: 3px solid var(--color-powderblue);
+    box-sizing: border-box;
+    width: 809px;
+    height: 775px;
+  }
+  .abc-abc {
+    font-weight: 500;
+  }
+  .name-abc-container {
+    cursor: pointer;
+    position: absolute;
+    top: 442px;
+    left: 83px;
+  }
+  .profile {
+    margin: 0;
+    position: absolute;
+    top: 176px;
+    left: 83px;
+    font-size: var(--font-size-17xl);
+    font-weight: 700;
+    font-family: inherit;
+  }
+  .admin {
+    font-weight: 600;
+  }
+  .role-admin-container {
+    cursor: pointer;
+    position: absolute;
+    top: 496px;
+    left: 83px;
+  }
+  .dcp {
+    font-weight: 600;
+  }
+  .post-dcp {
+    cursor: pointer;
+    position: absolute;
+    top: 547px;
+    left: 83px;
+  }
+  .span {
+    font-weight: 600;
+  }
+  .dob-18021980 {
+    cursor: pointer;
+    position: absolute;
+    top: 602px;
+    left: 83px;
+  }
+  .bawana-alipur {
+    font-weight: 600;
+  }
+  .ps-under-bawana-container {
+    cursor: pointer;
+    position: absolute;
+    top: 657px;
+    left: 83px;
+  }
+  .profile-screen-inner,
+  .vuesaxlinearuser-icon1 {
+    position: absolute;
+    height: 26.78%;
+    width: 23.81%;
+    top: 36.56%;
+    right: 11.84%;
+    bottom: 36.66%;
+    left: 64.35%;
+    max-width: 100%;
+    overflow: hidden;
+    max-height: 100%;
+    object-fit: cover;
+  }
+  .vuesaxlinearuser-icon1 {
+    height: 11%;
+    width: 7.14%;
+    top: 24.64%;
+    right: 66.8%;
+    bottom: 64.36%;
+    left: 26.06%;
+  }
+  .profile-screen {
+    width: 100%;
+    position: relative;
+    background-color: var(--color-white);
+    height: 982px;
+    overflow: hidden;
+    text-align: left;
+    font-size: var(--font-size-7xl);
+    color: var(--color-black);
+    font-family: var(--font-montserrat);
+  }
+  
