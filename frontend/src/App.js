@@ -6,17 +6,17 @@ import StaffManagement from './components/StaffManagement.js';
 
 import DutyTask from './components/DutyTask.js';
 import LoginScreen from './components/LoginScreen.js';
-import profile-screen from './components/profile.screen.js';
+import ProfileScreen from './components/profileScreen.js';
 
 function App() {
   return (
     <Router>
       <Routes>
-        <Route path="/" element={<DutyTask />} />
+        <Route path="/" element={<LoginScreen />} />
         <Route path="/StaffManagement" element={<StaffManagement />} />
         <Route path="/DutyTask" element={<DutyTask />} />
         <Route path="/LoginScreen" element={<LoginScreen />} />
-        <Route path="/profile-screen" element={<profile-screen />} />
+        <Route path="/profileScreen" element={<ProfileScreen />} />
       </Routes>
     </Router>
   );
