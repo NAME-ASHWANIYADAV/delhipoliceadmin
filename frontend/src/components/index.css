@@ -16,7 +16,7 @@ body {
     left: calc(50% - 864px);
     width: 1930px;
     height: 982px;
-    background-image: url(./public/map@3x.png);
+    background-image: url('../../public//map@3x.png');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: top;
