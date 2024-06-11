@@ -1,3 +1,4 @@
+const bcrypt = require('bcrypt');
 const User = require('../models/User');
 
 const loginUser = async (req, res) => {
@@ -7,8 +8,15 @@ const loginUser = async (req, res) => {
     // Check if user exists
     const user = await User.findOne({ mobileNumber });
 
-    if (!user || user.password !== password) {
-      return res.status(401).json({ message: 'Invalid phone number or password' });
+    if (!user) {
+      return res.status(401).json({ message: 'Invalid phone number' });
+    }
+
+    // Check if password is correct
+    const isValidPassword = await bcrypt.compare(password, user.password);
+
+    if (!isValidPassword) {
+      return res.status(401).json({ message: 'Invalid password' });
     }
 
     // User authenticated, proceed to dashboard
