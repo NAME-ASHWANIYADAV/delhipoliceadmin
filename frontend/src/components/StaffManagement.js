@@ -4,7 +4,7 @@ import { useNavigate } from 'react-router-dom';
 import groupImage from '../assets/Group.png';
 import userIcon from '../assets/user.svg';
 import mapImage from '../assets/MAP.png';
-
+import Header from '../components/header'
 
 
 const StaffManagement = () => {
@@ -15,19 +15,13 @@ const StaffManagement = () => {
       navigate('/DutyTask');
     };
   return (
+    <>
+    <Header/>
     <div style={{ 
       backgroundImage: `url(${mapImage})`, 
       backgroundRepeat: 'no-repeat', 
       fontFamily: 'Montserrat' 
-    }}>
-      <div className="nav">
-        <img src={groupImage} alt="#" />
-        <button className="nav-button">DASHBOARD</button>
-      <button className="nav-button" onClick={handleRedirect} >DUTY CHART</button>
-      <button className="nav-button" >ADD/REMOVE STAFF</button>
-      <button className="nav-button">STAFF MEMBERS</button>
-        <img src={userIcon} alt="#" />
-      </div>
+      }}>
       <br /><br /><br />
       <div className="selectstation">
         <h2>SELECT POLICE STATION</h2>
@@ -43,7 +37,7 @@ const StaffManagement = () => {
             value="SUBMIT"
             className="select"
             style={{ backgroundColor: '#009ADC', color: '#fff', textAlign: 'center', margin: '20px', width: '150px', border: 'none' }}
-          />
+            />
         </form>
       </div>
       <br /><br />
@@ -63,6 +57,7 @@ const StaffManagement = () => {
         <p style={{ color: 'green' }}>STAFF MEMBER HAS BEEN ADDED SUCCESSFULLY!</p>
       </div>
     </div>
+            </>
   );
 };
 

@@ -68,7 +68,7 @@ const LoginScreen = () => {
       <div className="group-parent">
         <img className="group-icon" alt="" src={logo} />
 
-        <h1 className="constableonpatrol">ConstableOnPatrol</h1>
+        {/* <h1 className="constableonpatrol">ConstableOnPatrol</h1> */}
       </div>
       <div className="image-2-parent">
         <img className="image-2-icon" alt="" src={onlyLogo} />

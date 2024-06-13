@@ -1,6 +1,8 @@
 import React from 'react';
 import './global.css';
 import './profile-screen.css';
+import logo from '../assets/Logo.png'
+import user from '../assets/user.png'
 
 
 function Header() {
@@ -8,9 +10,9 @@ function Header() {
     <>
     <section className="map1"></section>
       <button className="vuesaxlinearuser">
-        <img className="user-icon" alt="" src="public/vuesaxlinearuser1@2x.png" />
+        <img className="user-icon" alt="" src={user} />
       </button>
-      <img className="group-icon2" alt="" src="./public/group@2x.png" />
+      <img className="group-icon2" alt="" src={logo} />
       <button className="dashboard1">DASHBOARD</button>
       <button className="duty-chart2">DUTY CHART</button>
       <img className="profile-screen-child" alt="" src="./public/line-11@2x.png" />
