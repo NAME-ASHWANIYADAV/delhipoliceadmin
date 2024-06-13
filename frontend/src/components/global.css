@@ -8,6 +8,13 @@ body {
 .some-class {
   font-family: 'Montserrat', sans-serif;
 }
+.password-toggle-icon{
+  position: absolute;
+  top: 8px;
+  right: 10px;
+  z-index: 10000;
+  cursor: pointer;
+}
 body {
     margin: 0;
     line-height: normal;

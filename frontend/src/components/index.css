@@ -6,6 +6,13 @@ body {
   font-family: 'Avenir Next', sans-serif;
 }
 
+.password-toggle-icon{
+  position: absolute;
+  top: 8px;
+  right: 10px;
+  z-index: 10000;
+  cursor: pointer;
+}
 .some-class {
   font-family: 'Montserrat', sans-serif;
 }
@@ -23,7 +30,7 @@ body {
   }
   .login-screen-child {
     position: absolute;
-    top: calc(50% - 269px);
+    top: calc(40% - 269px);
     left: 756px;
     border-radius: var(--br-xl);
     background-color: var(--color-white);
