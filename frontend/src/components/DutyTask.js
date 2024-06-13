@@ -5,7 +5,7 @@ import '../styles/dutytask.css';
 import groupImage from '../assets/Group.png';
 import userIcon from '../assets/user.svg';
 import mapImage from '../assets/MAP.png';
-
+import Header from './header.js'
 
 
 
@@ -16,13 +16,15 @@ const DutyTask = () => {
     navigate('/StaffManagement');
   };
   return (
+    <>
+    <Header/>
     <div  className='background'style={{ 
       backgroundImage: `url(${mapImage})`, 
       backgroundRepeat:'no-repeat',
       fontFamily: 'Montserrat',
       
     }}>
-      <div className="nav">
+      {/* <div className="nav">
       <img src={groupImage} alt="Group" className='logo'/>
 
       <button className="nav-button">DASHBOARD</button>
@@ -30,7 +32,8 @@ const DutyTask = () => {
       <button className="nav-button" onClick={handleRedirect}>ADD/REMOVE STAFF</button>
       <button className="nav-button">STAFF MEMBERS</button>
         <img src={userIcon} alt="#" className='user'/>
-      </div>
+      </div> */}
+      
       <br /><br /><br />
       <div className="selectstation">
         <h2>SELECT POLICE STATION</h2>
@@ -69,6 +72,7 @@ const DutyTask = () => {
         ))}
       </div>
     </div>
+    </>
   );
 };
 
