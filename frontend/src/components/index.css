@@ -223,7 +223,7 @@ body {
   background-position: top;
 }
 .delhi-police {
-  height: 12.5px;
+  height: 23.5px;
   line-height: 22px;
   font-weight: 700;
   display: inline-block;
@@ -255,14 +255,14 @@ body {
 .group-icon,
 .image-2-icon {
   position: absolute;
-  top: 360px;
+  top: 277px;
   left: 245px;
   width: 282.2px;
   height: 184.5px;
   z-index: 1;
 }
 .image-2-icon {
-  top: 34px;
+  top: -13px;
   left: 52.1px;
   width: 126.8px;
   height: 113.6px;
